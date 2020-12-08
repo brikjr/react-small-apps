@@ -1,0 +1,48 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.summer{
+    background: #ccc9c6;
+}
+.winter{
+    background: #d0e8f2;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left-icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.right-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.summer i{
+    color: #c24914;
+}
+.winter i{
+    color: #79a3b1;
+}
+i{
+    animation: Rotating 4s  infinite linear;
+}
+
+@keyframes Rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
